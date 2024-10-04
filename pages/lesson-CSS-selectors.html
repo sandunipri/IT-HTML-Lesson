@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson-CSS-selectors</title>
+    <style>
+      /* element selector */
+      /* h2 {
+        color: rgb(216, 17, 216);
+      } */
+      /* class selector */
+      /* .text {
+        color: rgb(223, 101, 101);
+      } */
+
+      /* id selector */
+      /* #main-paragraph {
+        color: orange;
+      } */
+
+      /* attribute selector */
+      /* a[target="_blank"] {
+        color: rgb(68, 0, 255);
+      } */
+
+      /* descendant selector */
+      /* div p {
+        font-style: italic;
+      } */
+
+      /* child selector
+      ul > li {
+        font-style: italic;
+        color: purple;
+        list-style-type: square;
+      } */
+
+      /* adjacent sibling selector */
+      /* h2 + p + p {
+        color: blue;
+      } */
+
+      /* general sibling selector */
+      /* h1 ~ p {
+        color: rgb(27, 210, 103);
+      } */
+
+      /* pseudo class selector */
+      /* li:first-child {
+        color: rgb(226, 153, 43);
+      }
+      li:last-child {
+        color: rgb(83, 226, 43);
+      }
+      li:nth-child(3) {
+        color: rgb(226, 43, 43);
+      }
+      li:nth-child(even) {
+        color: rgb(43, 131, 131);
+      } */
+      /* ul:hover {
+        color: aqua;
+        background-color: red;
+      } */
+
+      /* pseudo element selector */
+      /* p::first-letter {
+        font-size: 30px;
+      }
+      p::first-line {
+        color: blue;
+      }
+      p::before {
+        content: "Before";
+      }
+      p::after {
+        content: "After";
+      } */
+      /* grouping selector */
+      h1,
+      h2,
+      h3 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Selectors</h1>
+    <hr />
+
+    =======1.Element Selectors========
+    <h2>Hello Wrold</h2>
+    <h3>Hello</h3>
+    <h2>How are you !!</h2>
+    <hr />
+    =======2.class selector=========
+    <p class="paragraph">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae voluptates
+      eaque ad iste voluptatibus in, praesentium consequatur nostrum at nam non
+      quos, exercitationem eos, ipsum distinctio laboriosam! Tenetur fuga
+      voluptatum nemo temporibus molestias vel, ad magni cumque natus amet harum
+      quaerat quasi eaque doloribus beatae, repudiandae atque iusto quas enim.
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+      voluptates odit, non tempora,
+      <span class="text"
+        >quod autem ipsam facilis eius unde quo quos deleniti corporis nemo
+      </span>
+      nostrum omnis dignissimos voluptatum exercitationem a?
+    </p>
+    <h3 class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+      assumenda eligendi, cupiditate quod aliquam similique doloremque libero
+      autem molestiae laboriosam sunt esse, dolores iste reiciendis nobis
+      voluptatibus ad impedit omnis!
+    </h3>
+    <hr />
+    ======3.is selectors ========
+    <p id="main-paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quaerat
+      obcaecati distinctio. Deserunt, et error! Architecto pariatur quasi
+      ducimus earum.
+    </p>
+    <hr />
+    ======4.Attribute selector======
+    <br />
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <hr />
+    =======5.descendant selector(space)=======
+    <div>
+      <p>One</p>
+      <p>Two</p>
+      <p>Three</p>
+    </div>
+    <hr />
+    ======6.Child selector(>)========
+    <ul>
+      <li>Java</li>
+      <li>MySQL</li>
+      <li>HTML</li>
+    </ul>
+    <hr />
+    ======7.Adjacent sibling selectors(+)========
+    <h2>Adjacent</h2>
+    <p>Hello One</p>
+    <p>Hello Two</p>
+    <hr />
+    ======8.General sibling selectors(~)========
+    <h1>Main Heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <div>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <hr />
+    =======9.Pseudo class selector========
+    <ul>
+      <li>Java</li>
+      <li>MySQL</li>
+      <li>HTML</li>
+      <li>CSS</li>
+    </ul>
+    <hr />
+    =======10.Pseudo element selector========
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis fugiat
+      sunt iste consectetur ad officiis quisquam, illo reiciendis officia error
+      labore eveniet autem hic libero quam quas laboriosam earum! Asperiores.
+    </p>
+    <hr />
+    =======11.grouping selector========
+    <h1>Headind One</h1>
+    <h2>Heading Two</h2>
+    <h3>Heading Three</h3>
+  </body>
+</html>
+
+<!-- universal selector -->
