@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animation</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+
+        /* animation-name: up-down;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: 2;
+        animation-delay: 0s; */
+
+        animation: square 2s linear 1 0s;
+      }
+      /* @keyframes up-down {
+        0% {
+          transform: translateX(0);
+          background-color: red;
+        }
+        50% {
+          transform: translateX(500px);
+          background-color: aqua;
+        }
+        100% {
+          transform: translateX(0);
+          background-color: blueviolet;
+        }
+      } */
+      /* @keyframes square {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: blue;
+        }
+      } */
+      @keyframes square {
+        0% {
+          transform: translate(0, 0);
+        }
+        25% {
+          transform: translate(400px, 0);
+        }
+        50% {
+          transform: translate(400px, 400px);
+        }
+        75% {
+          transform: translate(0, 400px);
+        }
+        100% {
+          transform: translate(0, 0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h2>CSS Animation</h2>
+    <hr /> -->
+    <div class="box"></div>
+  </body>
+</html>

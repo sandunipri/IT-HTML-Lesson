@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-10</title>
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        background-color: azure;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .box {
+        width: 75px;
+        height: 100px;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px grey;
+        font-size: 30px;
+        cursor: pointer;
+        transition: width 1s ease;
+      }
+
+      .box:hover {
+        width: 150px;
+        height: 100px;
+        font-size: 20px;
+      }
+
+      .mood {
+        font-size: 20px;
+        transition: white 3s ease 5s;
+        opacity: 0;
+      }
+      .mood:hover {
+        opacity: 1;
+      }
+      .box:hover .mood {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">😀 <span class="mood">laugthing</span></div>
+    <div class="box">😭<span class="mood">crying</span></div>
+    <div class="box">😍<span class="mood">love</span></div>
+    <div class="box">🤭<span class="mood">shy</span></div>
+  </body>
+</html>

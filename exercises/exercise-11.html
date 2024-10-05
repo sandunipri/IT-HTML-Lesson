@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 11</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+
+        background-color: red;
+        position: absolute;
+        animation: square 5s linear 2 0s;
+      }
+      @keyframes square {
+        0% {
+          top: 0;
+          left: 0;
+          background-color: red;
+        }
+        25% {
+          top: 0;
+          left: calc(100% - 100px);
+          background-color: aqua;
+          border-radius: calc(100% / 4);
+        }
+        50% {
+          top: calc(100% - 100px);
+          left: calc(100% - 100px);
+          background-color: blue;
+          border-radius: calc(100% / 3);
+          /* transform: rotate(720deg); */
+        }
+        75% {
+          top: calc(100% - 100px);
+          left: 0;
+          background-color: yellow;
+          border-radius: calc(100% / 2);
+        }
+        100% {
+          top: 0;
+          left: 0;
+          border-radius: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
