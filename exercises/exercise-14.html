@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        width: calc(100% - 20px);
+        height: 60px;
+        display: flex;
+        padding: 0 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: aqua;
+      }
+      .logoAndName {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 10px;
+      }
+      .logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+
+      .nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        column-gap: 15px;
+        padding-left: 10px;
+      }
+      .button {
+        display: none;
+        background-image: url(/assets/images/buger\ button-02.png);
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+      }
+
+      @media screen and (min-width: 0px) and (max-width: 575px) {
+        .nav {
+          display: none;
+        }
+        .button {
+          display: block;
+        }
+        p {
+          display: none;
+        }
+        .menupanel.active {
+          right: 0;
+        }
+      }
+      .menupanel {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: grey;
+        width: 250px;
+        height: 100%;
+      }
+      .closeBtn {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        background-image: url(/assets/images/buger\ button-02.png);
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        background-color: transparent;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logoAndName">
+        <img
+          class="logo"
+          src="/assets/images/Picsart_24-07-12_13-43-30-593.png"
+          alt="sanduni's image"
+        />
+        <p>H.S.S.Priyadarshani</p>
+      </div>
+      <div class="nav">
+        <p>Home</p>
+        <p>About</p>
+        <p>Services</p>
+        <p>Skills</p>
+      </div>
+      <div
+        id="buger
+      "
+        class="button"
+      ></div>
+      <div id="menu-panel-id" class="menupanel">
+        <button id="btn-close" class="closeBtn"></button>
+      </div>
+    </div>
+
+    <script>
+      const buger = document.getElementById("burger");
+      const menupanel = document.getElementById("menu-panel-id");
+      const closeBtn = document.getElementById("btn-close");
+
+      buger.addEventListener("click", () => {
+        menupanel.classList.toggle("active");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        menupanel.classList.remove("active");
+      });
+    </script>
+  </body>
+</html>
